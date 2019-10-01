@@ -33,19 +33,25 @@
    4. 
    ```matlab
       ddl=zeros(3);
-      p=(exp(X1*b_ten)./(1+exp(X1*b_ten)));
-      dl=sum(-1*X1.*(y-p));
+      p=(exp(X1*b_ten)./(1+exp(X1*b_ten)));  %p is the rate of(y=1 | x)
+      dl=sum(-1*X1.*(y-p));                  %dl = ∂l(b)/∂b
       
         for i=1:m,
       
           ddl_ten=(X1(i,:))'*X1(i,:)*p(i)*(1-p(i));
-          ddl=ddl+ddl_ten;
+          ddl=ddl+ddl_ten;                   %ddl = ∂^2*l(b)/∂b∂b^T
       
         end
       ```
-       >p is the rate of(y=1 | x)
-       >dl = ∂l(b)/∂b
-       >ddl = ∂^2*l(b)/∂b∂b^T
+   5. Using Newton’s method, in t+1 iteration,  
+      𝜷^(𝑡+1)=𝜷^𝑇−((𝜕^2 ℓ(𝜷))/(𝜕𝜷𝜕𝜷^𝑇 ))^(−1)  𝜕ℓ(𝜷)/𝜕𝜷
+    ```matlab
+       e=inv(ddl)*dl';
+       b=b_ten-e;
+       b_ten=b;
+       ```  
+       
+  6. 
    
 4. The prediction results and your interpretation of the results. Plot a figure like the
 following one in your report:  
