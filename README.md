@@ -2,16 +2,16 @@
 
 1. The data set you have chosen and its main characteristics.  
 
-   * source: [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml)  
+   * Source: [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml)  
    * Dete set ID: 2861753 (Iris)  
-   * chose the follow items for the two feature:  
+   * Chose the follow items for the two features:  
      > sepal length in cm  
      > sepal width in cm  
      
 2. The data preprocessing operations you have applied to improve data quality.  
 
    * Edit: change the label into 0,1,2  
-   * so it looks like:  
+   * So it looks like:  
 
     |feature1|feature2|label|  
     |:---:|:---:|:---:|  
@@ -54,5 +54,8 @@
    
 4. The prediction results and your interpretation of the results. Plot a figure like the
 following one in your report:  
-
+   * It shoud work.Becouse I chose the two features that can distinguish two kinds of iris successfully.  
+   * Finally, the image is pretty and the accuracy rate is 100%.  
+   ![My result](https://cdn1.imggmi.com/uploads/2019/10/1/008985de9393fe4df4f7103e252621a3-full.jpg "My result")
 5. Limitations and possible improvements of the program.  
+   * In Newton’s method, we need to calculate the inverse of matrix. Sometime it come up with a Singular matrix. Maybe gradient descent method is a better way.
