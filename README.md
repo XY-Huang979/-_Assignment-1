@@ -1,4 +1,4 @@
-# -_Assignment-1
+# Assignment-1
 
 1. The data set you have chosen and its main characteristics.  
 
