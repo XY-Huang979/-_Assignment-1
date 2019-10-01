@@ -20,9 +20,18 @@
     |~~6.3~~ |~~3.3~~ |~~Iris Virginica~~ `2`  |  
     >we only need two kinds of iris
     
-3. The design of the different modules of your program. In describing each module,
-you should relate your design to the theories you have learnt in the class.  
+3. The design of the different modules of your program. In describing each module, you should relate your design to the theories you have learnt in the class.  
 
+   1. Initialization & Load Data (Training_set:Test_set=6:4)  
+   2. Put some labels & Specified in plot order ('Iris-setosa', 'Iris-versicolor')  
+   3. 
+   ```matlab
+      m=length(y);
+      b_ten=[-5;6;1];
+      X1=[x,ones(m,1)];
+      ```
+      So (X1*b_ten) = ((𝒘^𝑇)*𝒙+𝑏)
+   4.   
 4. The prediction results and your interpretation of the results. Plot a figure like the
 following one in your report:  
 
