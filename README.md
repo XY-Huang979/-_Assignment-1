@@ -1,5 +1,9 @@
 # Assignment-1
 
+How to run this program?  
+
+  * Open Assignment_1.m in matlab or octave, and run it.
+
 1. The data set you have chosen and its main characteristics.  
 
    * Source: [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml)  
