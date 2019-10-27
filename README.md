@@ -7,7 +7,7 @@ How to run this program?
 1. The data set you have chosen and its main characteristics.  
 
    * Source: [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml)  
-   * Dete set ID: 2861753 (Iris)  
+   * Data set ID: 2861753 (Iris)  
    * Chose the follow items for the two features:  
      > sepal length in cm  
      > sepal width in cm  
